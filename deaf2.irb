@@ -1,0 +1,32 @@
+#Grandma is deaf!
+puts 'Say something to granny'
+
+goodbyes = 0
+
+  while goodbyes != 3
+    you_say = gets.chomp
+    heard = you_say.upcase
+
+    if (you_say == "BYE")
+    then goodbyes = goodbyes + 1
+    else
+    goodbyes = 0
+  end
+
+  if (goodbyes == 1)
+    puts 'WHAT DID YOU SAY?'
+    elsif (goodbyes == 2)
+      puts 'SAY THAT AGAIN?'
+    elsif (goodbyes == 3)
+      puts 'OK BYE BYE!'
+    else 
+
+    if heard == you_say
+      year = (1930 + rand(20)).to_s
+      puts 'NO, NOT SINCE '+year
+     
+    else
+    puts 'HUH?!  SPEAK UP, SONNY!'
+    end
+  end
+end
