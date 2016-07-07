@@ -1,0 +1,8 @@
+sum = 0
+a,b = 1,1
+while a <= 4_000_000
+  sum += a if a.even?
+  a,b = b,a+b
+end
+
+p sum
